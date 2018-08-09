@@ -1,0 +1,168 @@
+ body {
+    background-color: #FAEBD7;
+	background-image:url('beach.jpeg');
+	background-repeat: inherit;
+	background-size: 100% 100%;     
+}
+
+/* more efforts put into the animation part as expected for CSS */
+.header {
+    background-color: #00cc00;
+    background: linear-gradient(to bottom, #002966 , #80b3ff);
+    background-clip: padding-box;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    outline-style: ridge;
+    outline-width: 10px;
+    outline-color: purple;
+    margin: 8px;
+    animation: head 4s infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: all;
+}
+
+@keyframes head {
+    from {top: 0px;}
+    to {bottom: 10px; background-color: #ccff66;}
+}
+
+/* The FCC Profile name and link */
+h1 {
+    color: black;
+    text-align: center;
+    font-family: times-new-roman;
+    text-shadow: 2px 2px 5px #2f4f4f;   
+}
+
+/* Internally directed links for Projects, Connect and About sections */
+h2 a {
+    color: black;
+    text-decoration-line: none;
+    outline-style: double;
+}
+
+.searchform {
+    display: flex;
+	position: relative;
+	right: -615px;
+	top: 14px;
+	align-self: right;
+
+}
+
+.button {
+    background-color: #cccccc;
+    color: black;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #e6e6e6;
+    opacity: 8}
+
+/* Navigation bar */
+.topnav {
+    background-color: #0099cc;
+    overflow: hidden;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+/* Navigation links */
+.topnav a {
+    display: flex;
+    float: left;	
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-size: 19px;
+    display: inline-block;
+}    
+
+/* Changes over navigation links on hover */
+.topnav a:hover {
+    color: aqua;
+    background-color: #009900;
+    transition: 0.3s;
+}
+
+hr {
+	border-color: black;
+	margin: 3px;
+}
+
+img {
+	color: white;
+	width: 90px;
+	height: 90px;
+	float: right;
+	margin-left: 8px;
+}
+
+div.transbox,section.transbox {
+	margin-right: -1px;
+	margin-left: -1px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+    box-shadow: 1px 4px 34px -1px rgba(0,0,0,0.63);
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+p {
+	text-align: justify;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p.para {
+	line-height: 1.5;
+
+}
+
+/* trying to get the background color of options to change on hover */
+datalist.option:hover {
+    background-color: blue; 
+}
+
+/* Paragraph alignment for About section */
+.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+
+}
+
+/* Transparent box for About section */
+.transbox1 {
+	margin: auto;11111
+	width: 30%;
+	padding: 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+    box-shadow: 1px 4px 34px -1px rgba(0,0,0,0.63);
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
